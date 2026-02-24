@@ -1,0 +1,107 @@
+/* --- RESET & BODY --- */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Poppins',sans-serif;background:#04063b;color:#fff;scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit;}
+
+/* --- HEADER --- */
+.header{position:fixed;top:0;width:100%;padding:15px 10%;display:flex;justify-content:space-between;align-items:center;background:#111;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.5);}
+.header .logo{font-size:28px;font-weight:700;color:#fff;}
+.navbar a{margin-left:25px;font-size:16px;font-weight:500;transition:0.3s;}
+.navbar a:hover,.navbar a.active{color:#811694;}
+
+/* --- HERO --- */
+.home{display:flex;align-items:center;justify-content:space-between;height:100vh;padding:0 10%;}
+.home-container{display:flex;gap:50px;flex-wrap:wrap;}
+.home-text h1{font-size:60px;}
+.home-text h3{font-size:24px;margin-bottom:15px;}
+.typed{color:#811694;font-weight:bold;}
+.home-text p{font-size:18px;line-height:1.6;margin:20px 0;}
+.home-buttons .btn{padding:12px 28px;background:#811694;border-radius:40px;margin-right:15px;transition:0.3s;}
+.home-buttons .btn:hover{background:#ff00c8;}
+.home-buttons .btn-outline{border:2px solid #811694;background:transparent;}
+.home-buttons .btn-outline:hover{background:#811694;}
+.home-image img{width:400px;border-radius:50%;border:5px solid #fff;box-shadow:0 0 20px #e100ff,0 0 40px #e100ff;}
+.hero-stats{display:flex;gap:25px;margin-top:20px;}
+.hero-stats div{text-align:center;}
+.hero-stats .count{font-size:24px;font-weight:700;color:#811694;}
+
+/* --- SECTIONS TITLES --- */
+.section-title{font-size:48px;text-align:center;margin-bottom:60px;}
+.section-title span{color:#811694;}
+
+/* --- ABOUT --- */
+.about-container{display:flex;align-items:center;justify-content:space-between;gap:50px;flex-wrap:wrap;padding:80px 10%;}
+.about-image img{width:350px;border-radius:50%;border:5px solid #fff;box-shadow:0 0 20px #e100ff;}
+.about-text h2{font-size:40px;margin-bottom:20px;}
+.about-text h2 span{color:#811694;}
+.about-text h4{font-size:22px;color:#fff;margin-bottom:15px;}
+.about-text p{font-size:16px;line-height:1.6;margin-bottom:20px;}
+
+/* --- SERVICES --- */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;padding:0 10%;margin-bottom:80px;}
+.service-card{background:#081b29;padding:30px 20px;border-radius:15px;text-align:center;border:2px solid #811694;transition:0.3s;}
+.service-card:hover{transform:translateY(-10px);box-shadow:0 0 20px #811694;}
+.service-card i{font-size:50px;color:#811694;margin-bottom:15px;}
+.service-card h3{font-size:22px;margin-bottom:10px;}
+.service-card p{font-size:14px;}
+
+/* --- RADIAL SKILLS --- */
+.skills-radial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:40px;justify-items:center;margin-top:40px;}
+.radial-skill{position:relative;width:150px;height:150px;}
+.radial-skill svg{transform:rotate(-90deg);width:150px;height:150px;}
+.radial-skill circle{fill:none;stroke-width:10;stroke-linecap:round;}
+.radial-skill .bg{stroke:#222;}
+.radial-skill .progress{stroke:#811694;stroke-dasharray:283;stroke-dashoffset:283;transition:stroke-dashoffset 2s ease;}
+.skill-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+.skill-text h4{font-size:18px;margin-bottom:5px;}
+.skill-text .percent{font-size:16px;color:#811694;font-weight:700;}
+
+/* --- AI/ML DEMO --- */
+.ai-demo{padding:80px 10%;background:#081b29;}
+.demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;}
+.demo-card{background:#111;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.4);text-align:center;}
+.demo-card h3{margin-bottom:15px;color:#811694;}
+.demo-card textarea,input{width:100%;padding:12px;margin-bottom:12px;border-radius:8px;border:none;outline:none;font-size:16px;}
+.demo-card button{padding:10px 20px;background:#811694;border:none;color:#fff;border-radius:40px;cursor:pointer;width:100%;font-weight:600;transition:0.3s;}
+.demo-card button:hover{background:#ff00c8;}
+#chatOutput,#predictionOutput{margin-top:12px;padding:10px;min-height:50px;background:#222;border-radius:8px;color:#fff;font-size:16px;}
+
+/* --- PROJECTS --- */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;padding:0 10%;margin-bottom:80px;}
+.project-card{position:relative;overflow:hidden;border-radius:12px;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.project-card img{width:100%;transition:transform 0.5s ease;}
+.project-card:hover img{transform:scale(1.1);}
+.project-overlay{position:absolute;bottom:0;left:0;right:0;background:rgba(24,6,57,0.95);color:#fff;padding:20px;transform:translateY(100%);transition:0.4s;}
+.project-card:hover .project-overlay{transform:translateY(0);}
+.project-overlay h3{font-size:20px;margin-bottom:10px;color:#811694;}
+.project-overlay p{font-size:14px;margin-bottom:10px;}
+.tech-tags span{background:#811694;padding:4px 8px;border-radius:5px;font-size:12px;margin-right:5px;}
+.project-links a{color:#fff;font-weight:600;margin-right:10px;transition:0.3s;}
+.project-links a:hover{color:#ff00c8;}
+
+/* --- TESTIMONIALS --- */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;padding:0 10%;margin-bottom:80px;}
+.testimonial-card{background:#081b29;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.3);text-align:center;}
+.testimonial-card p{font-size:14px;line-height:1.5;margin-bottom:10px;}
+.testimonial-card h4{font-size:16px;color:#811694;}
+
+/* --- CONTACT --- */
+.contact-container{padding:80px 10%;}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:50px;}
+.contact-info ul{list-style:none;margin-top:20px;}
+.contact-info li{margin-bottom:15px;font-size:16px;}
+.contact-info i{margin-right:10px;color:#811694;}
+.contact-form input,.contact-form textarea{width:100%;padding:15px;margin-bottom:15px;border-radius:8px;border:none;outline:none;}
+.contact-form button{padding:12px 30px;border:none;border-radius:40px;background:#811694;color:#fff;font-weight:600;cursor:pointer;transition:0.3s;}
+.contact-form button:hover{background:#ff00c8;}
+
+/* --- FOOTER --- */
+footer{text-align:center;padding:25px 0;background:#081b29;font-size:14px;}
+
+/* --- RESPONSIVE --- */
+@media(max-width:768px){
+  .home{flex-direction:column-reverse;text-align:center;padding-top:120px;}
+  .home-image img{width:250px;margin-bottom:30px;}
+  .about-container,.skills-radial-grid,.projects-grid,.testimonials-grid,.contact-grid,.demo-grid{grid-template-columns:1fr;text-align:center;}
+  .navbar a{margin-left:10px;}
+}
