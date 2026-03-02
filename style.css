@@ -12,7 +12,7 @@ a{text-decoration:none;color:inherit;}
 /* --- HERO --- */
 .home{display:flex;align-items:center;justify-content:space-between;height:100vh;padding:0 10%;}
 .home-container{display:flex;gap:50px;flex-wrap:wrap;}
-.home-text h1{font-size:60px;}
+.home-text h1{font-size:60px;margin-top:10px}
 .home-text h3{font-size:24px;margin-bottom:15px;}
 .typed{color:#811694;font-weight:bold;}
 .home-text p{font-size:18px;line-height:1.6;margin:20px 0;}
@@ -104,4 +104,5 @@ footer{text-align:center;padding:25px 0;background:#081b29;font-size:14px;}
   .home-image img{width:250px;margin-bottom:30px;}
   .about-container,.skills-radial-grid,.projects-grid,.testimonials-grid,.contact-grid,.demo-grid{grid-template-columns:1fr;text-align:center;}
   .navbar a{margin-left:10px;}
+
 }
